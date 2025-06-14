@@ -1,0 +1,8 @@
+# Ignore built or deployment artifacts
+*.zip
+*.DS_Store
+node_modules/
+.env
+dist/
+build/
+.s3deploy/
