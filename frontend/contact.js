@@ -21,6 +21,10 @@ document.getElementById("contact-form").addEventListener("submit", async functio
   
       const result = await response.json();
       status.textContent = result.message;
+
+      form.reset();
+
+      
     } catch (err) {
       status.textContent = "Something went wrong.";
       console.error("Form submission error:", err);
