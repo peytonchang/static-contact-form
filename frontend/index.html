@@ -5,86 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Peyton Chang – AWS Developer Portfolio">
   <title>Peyton Chang | AWS Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- HERO -->
-  <section id="hero">
+  <!-- HERO (colored header) -->
+  <header class="hero">
     <h1>Peyton Chang</h1>
     <p>AWS Developer | Software Engineer | Cloud Enthusiast</p>
-    <a href="#projects">View My Work</a>
-  </section>
+  </header>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a recent Computer Science graduate from the University of Maryland, now working on the infrastructure team at a software company. I focus on building scalable backend systems using AWS and writing clean, maintainable code to support reliable cloud infrastructure. I'm passionate about automation, cloud services, and delivering well-architected solutions.
-    </p>
-    <!-- <img src="profile.jpg" alt="Peyton Chang" /> -->
-  </section>
+  <!-- MAIN CONTENT (white card) -->
+  <main class="content">
+    <nav class="section-nav">
+      <a href="#about">Introduction</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            My name is Peyton Chang and I am a recent graduate from the University of Maryland with a degree in computer science. 
+          </p>
+          <br>
+          <p>
+            I’m currently seeking full-time opportunities in software engineering or infrastructure roles where I can continue growing as a developer and contribute to impactful technical solutions.
+          </p>
+        </div>
+        <img src="selfie.jpg" alt="Peyton Chang" class="about-image" />
+      </div>
+    </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Serverless AWS Contact Portfolio</h3>
-      <p>A professional portfolio site featuring a fully functional contact form built with AWS services. The site is hosted on S3 and distributed via CloudFront, while form submissions are handled using AWS Lambda, API Gateway, and SES for seamless email delivery — all without a traditional backend server.</p>
-      <a href="https://github.com/peytonchang/static-contact-form" target="_blank">GitHub</a>
-    </div>
-    <!-- Add more projects here -->
-  </section>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Serverless AWS Contact Portfolio</h3>
+        <p>A professional portfolio site featuring a fully functional contact form built with AWS services. The site is hosted on S3 and distributed via CloudFront, while form submissions are handled using AWS Lambda, API Gateway, and SES for seamless email delivery — all without a traditional backend server.</p>
+        <a href="https://github.com/peytonchang/static-contact-form" target="_blank">GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Recipe Recommender</h3>
+        <p>A smart recipe recommendation app that takes a list of user-provided ingredients and returns all possible meals that can be made using them. The app displays each matching recipe with step-by-step cooking instructions and images, offering an intuitive way to discover new meals without extra grocery trips. Ideal for reducing waste and making the most of what's already in your kitchen.</p>
+      </div>
+    </section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>AWS (EC2, S3, Lambda, SES, Route 53)</li>
-      <li>Java</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>HTML</li>
-      <li>C</li>
-      <li>C++</li>
-      <li>SQL</li>
-      <li>PostgreSQL</li>
-      <li>MySQL</li>
-      <li>MongoDB</li>
-      <li>Git</li>
-      <li>Github</li>
-      <li>Docker</li>
-      <li>ReactJS</li>
-      <li>Express.js</li>
-      <li>Postman</li>
-    </ul>
-  </section>
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>AWS (EC2, S3, Lambda, SES, Route 53)</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>SQL</li>
+        <li>PostgreSQL</li>
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>Git</li>
+        <li>Github</li>
+        <li>Docker</li>
+        <li>ReactJS</li>
+        <li>Express.js</li>
+        <li>Postman</li>
+      </ul>
+    </section>
 
-  <!-- RESUME -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="Resume.pdf" download>
-      <img src="resumeImage.jpg" alt="Resume preview" class="resume-img" />
-    </a>
-  </section>
+    <!-- RESUME -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <a href="Resume.pdf" download>
+        <img src="resumeImage.jpg" alt="Resume preview" class="resume-img" />
+      </a>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
-      <button type="submit">Send</button>
-    </form>
-    <p id="status"></p>
-    <p>Email: peytonchang07@gmail.com | <a href="https://www.linkedin.com/in/peytonchang07" target="_blank">LinkedIn</a></p>
-  </section>
+        <button type="submit">Send</button>
+      </form>
+      <p id="status"></p>
+      <p>Email: peytonchang07@gmail.com | <a href="https://www.linkedin.com/in/peytonchang07" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
